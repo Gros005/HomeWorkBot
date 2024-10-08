@@ -1,8 +1,14 @@
 package ru.homework.HomeWorkBot;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import java.security.PublicKey;
 import java.util.*;
 import java.lang.String;
 
+@Setter
+@Getter
 public class Homework {
     private Long id;
     private String subject;
@@ -43,52 +49,22 @@ public class Homework {
         return addedBy;
     }
 
-    //Setters
-    public void setId(Long _id){
-        if(_id != null && _id > 0){
-            this.id = _id;
-        } else{
-            throw new IllegalArgumentException("ID must be > 0");
-        }
+    public boolean isOverdue(){
+        return dueDate.before(new Date());
+
     }
 
-    public void setSubject(String _subject){
-        if(_subject != null && _subject.isEmpty()){
-            this.subject = _subject;
-        } else{
-            throw new IllegalArgumentException("Enter correct string");
-        }
+    @Override
+    public String toString() {
+        return String.format("Homework [ID: %d, Subject: %s, Due: %s]", id, subject, dueDate);
     }
+    //сравнение дз по сроку
+    public int compareTo(Homework other){
+        return this.dueDate.compareTo(other.dueDate);
+    }
+    //method for reminders
+    //methods for categorizing Homework
 
-    public void setDescription(String _description){
-        if(_description != null && !_description.isEmpty()  && _description.length() < 50){
-            this.description = _description;
-        } else{
-            throw new IllegalArgumentException("Enter description again");
-        }
-    }
 
-    public void setDueDate(Date _dueDate){
-        if(_dueDate != null){
-            this.dueDate = _dueDate;
-        } else{
-            throw new IllegalArgumentException("dueDate must not be null");
-        }
-    }
 
-    public void setGroupNumber(int _groupNumber){
-        if(_groupNumber != 0){
-            this.groupNumber = _groupNumber;
-        } else{
-            throw new IllegalArgumentException("groupNumber ");
-        }
-    }
-
-    public void setAddedBy(Long _addedBy){
-        if(_addedBy != null){
-            this.addedBy = _addedBy;
-        } else{
-            throw new IllegalArgumentException("ID must be > 0");
-        }
-    }
 }
