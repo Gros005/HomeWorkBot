@@ -15,5 +15,5 @@ public class BotConfig {
 
     @Value("${bot.token}")
     String token;
-    ////"6654924672:AAGzekqCwIVMrY8LMyz8sFBhY0E8I76QZ2I";
+  
 }
