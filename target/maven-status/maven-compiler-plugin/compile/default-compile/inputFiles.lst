@@ -1,0 +1,12 @@
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\BotConfig.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\BotInitializer.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\HomeWorkBotApplication.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\model\Homework.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\model\Student.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\repository\HomeworkRepository.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\repository\StudentRepository.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\service\HomeworkController.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\service\HomeworkService.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\service\StudentController.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\service\StudentService.java
+C:\JAVA\HomeWorkBot\src\main\java\ru\homework\homeworkbot\TelegramBot.java
